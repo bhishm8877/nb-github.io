@@ -1,0 +1,6 @@
+.tfcss{
+text-align: justify; line-height:2.5em; font-weight:550;}
+
+.tfcss_1{font-size:1.2em;font-weight:600;text-shadow: 2px 2px 4px #000000; line-height:2em; padding-left:18%}
+.tfurl{font-size:1.4em;font-weight:600;text-shadow: 2px 2px 4px #000000; line-height:2em; color:blue}
+.btn{border:3px solid rgb(173, 121, 24);box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color:green;text-shadow: 2px 2px 4px #000000;}

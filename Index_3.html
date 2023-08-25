@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="StyleSna.css">
+    <title>Hello, world!</title>
+	<style>
+	body {
+  font-family: Helvetica;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.site-header { 
+
+  padding: .5em 1em;
+}
+
+.site-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-identity {
+  float: left;
+}
+
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: .4em 0 .3em 0;
+  display: inline-block;
+}
+
+.site-identity img {
+  max-width: 70px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.site-navigation {
+  float: right;
+}
+ #demo{
+ color:green;}
+.site-navigation ul, li {
+  margin: 0; 
+  padding: 0;
+}
+
+.site-navigation li {
+  display: inline-block;
+  margin: 0em 1em 1em 1em;
+}
+.tfcss{
+text-align: justify; line-height:2.5em; font-weight:550;}
+
+.tfcss_1{font-size:1.2em;font-weight:600;text-shadow: 2px 2px 4px #000000; line-height:2em; padding-left:18%}
+.tfurl{font-size:1.4em;font-weight:600;text-shadow: 2px 2px 4px #000000; line-height:2em; color:blue}
+.btn{border:3px solid rgb(173, 121, 24);box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color:green;text-shadow: 2px 2px 4px #000000;}
+	</style>
+  </head>
+  <body onload="startTime()">
+  
+  <header class="site-header">
+  <div class="site-identity">
+    <a href="#"><img src="image/logo.jpeg" style="border:3px solid rgb(173, 121, 24);box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" alt="Site Name" /></a>
+	
+    <h1><a href="#" style="font-weight:600;text-shadow: 2px 2px 3px #000000;color:rgb(173, 121, 24)">
+		
+		<p style="line-height:0.6em; font-size:1.6em;"><span style="color:green">C</span>odebucket </p>
+         <p style="line-height:0px; font-size:0.8em; text-align:center">   <span style="color:green">S</span>olutions <span style="color:green">P</span>vt.</p>
+	</a></h1>
+  </div>  
+  <nav class="site-navigation">
+    <ul class="nav" style="font-weight:600;text-shadow: 1px 1px 2px #000000;">
+      <li id="txt" style="font-size:23px; font-weight:bold;color:green"><a href="#"> </a></li> 
+      <li id="demo" style="font-size:23px;><a href="#"> </a></li> 
+      <!--<li><a href="#">Contact</a></li> -->
+    </ul>
+  </nav>
+</header>
+  
+  
+  
+  <!---<header style="min-height:60px; padding:10px">
+		<div style="background-color:blue;min-height:60px; max-width:60px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><a href="#"> <img src="https://www.w3schools.com/bootstrap5/paris.jpg" style="min-height:60px; max-width:60px;" class="rounded" alt="Cinque Terre"> </a>
+		</div>
+  </header> -->
+  <nav class="navbar navbar-expand-sm" style="padding:0px;margin:0px; background-color:#DAA520; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="container-fluid" style="padding:0px 20px;margin:0px;font-weight:600;text-shadow: 1px 1px 3px #000000;">
+    <!---<a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" style="color:green" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:green">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+<div class="container my-4">
+	
+	<div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+            What is Single Nodal Account /Agency (SNA) ? SNA क्या हैं ?
+			</div>
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:1.2em;font-weight:600;text-shadow: 2px 2px 4px #000000;">Single Nodal Account /Agency</h5>
+          <p class="card-text" style="text-align: justify; line-height:2.5em; font-weight:550">जैसा कि आप सभी जानते हैं कि भारत सरकार के नई गाइड लाइन के अनुसार सभी विभाग और एजेंसी जो भारत सरकार के द्वारा फण्ड प्राप्त  
+				कर रही है विभिन्न स्कीमों के तहत स्पेशली जो CSS (Centrally Sponsored Scheme) स्कीम है CSS का मतलब है यहां Centrally Sponsored Scheme वे स्कीमों जो राज्य सरकार और भारत सरकार दोनों के Contribution या योगदान के द्वारा संचालित होती है उन स्कीमों को हम CSS स्कीम कहते हैं सभी स्कीम जो CSS स्कीमें  है और जिनके तहत राज्य सरकार और भारत सरकार के द्वारा अनुदान प्राप्त करते हैं  उनको भारत सरकार के नई गाइड लाइन के अनुसार PFMS के use करते हुए SNA का प्रयोग करना है अभी तक तो हम PFMS का use कर रहे थे लकिन उसमे क्या है नई गाइड लाइन के अनुसार एक और Additional चीज़ जुड़ गई है 
+				SNA अब आप यहां पर सोच रहे होंगे की SNA क्या है SNA का तात्पर्य यहां पर Single Nodal Agency है  या आप Single Nodal Account भी कह सकते हैं  अभी तक पुरानी प्रक्रिया में जो विभाग बैंक पर काम कर रहे थे वह अपने खाते में
+				ट्रेजरी के द्वारा पैसा प्राप्त कर लेते थे  और अपने lower एजेंसी का या अपने चाइल्ड एजेंसी को उस पैसे को ट्रांसफर कर देते थे और इसी तरह जो उस स्कीम की HARHARIKAL होती थी 
+				फण्ड का ट्रांसफर  होता जाता था जहां तक N-बेनिफिशियरी को आप या N-Vender को  आप जो Last User 
+				 उसको जहां से आप Dierct Payment कर रहे हैं लेकिन अब जो ये SNA है  SNA में  जो केवल आपको  First Label एजेंसी रहेगी या आप कह सकते हैं कि आपको निदेशालय स्तर
+				 की जो एजेंसी है उसी के पास पैसा रहेगा उसी के पास जो CSS है  उसका फंड रहेगा उसकी नीचे जितनी भी Lower एजेंसी है वे या तो SNA Access का  अकाउंट ही या अपने जीरो बैलेंस सब्सिडरी Account  यूज करेंगे
+				  तो इस तरह जो नई प्रक्रिया है उसमें  SNA का प्रयोग करते हुए फंडिंग की जाएगी
+				  मैं थोड़ा सा आपको एक चार्ट के द्वारा समझाता हूं कि कैसे फंड फ्लो होगा और SNA क्या है 
+				  
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+	
+	<div class="card mt-4"  style="border-top:8px solid green;min-height:12vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+          Flow Chart
+        </div>
+        <div class="card-body">
+          <img src="image/SNA.jpg" class="img-fluid" width="100%"  alt="...">
+        </div>
+      </div>
+	
+	<div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+           PFMS (Public Finance Management System)
+			</div>
+         <div class="card-body">
+          <h5 class="card-title" style="font-size:1.2em;font-weight:600;text-shadow: 2px 2px 4px #000000;">Public Finance Management System</h5>
+          <p class="card-text" style="text-align: justify; line-height:2.5em; font-weight:550">
+		 PFMS एक वेब आधारित पोस्टर है जिसका मुख्य उद्देश्य भारत सरकार की सभी योजनाओं के तहत जारी धनराशि के अंतिम उपयोगकर्ता की ,सुविधा ट्रैकिंग और निगरानी करना है | इसे केंद्र  प्रायोजित योजना CSS के तहत विभाग एवं वित्त मंत्रालय भारत सरकार द्वारा 2009 में लॉन्च किया गया था|
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+	
+	<div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+           CSS (Centrally Sponsored Scheme)
+			</div>
+         <div class="card-body">
+          <h5 class="card-title" style="font-size:1.2em;font-weight:600;text-shadow: 2px 2px 4px #000000;">Centrally Sponsored Scheme</h5>
+          <p class="card-text" style="text-align: justify; line-height:2.5em; font-weight:550">
+		 CSS (Centrally Sponsored Scheme) वे  स्कीमें जो राज्य सरकार और भारत सरकार दोनों के  अनुदान  द्वारा चलती हैं  दोनों का Contribution होती है   भारत सरकार  का भी और राज्य सरकार  का भी   
+		जैसे की आपकी प्रधानमंत्री आवास योजना हो गई ये जो स्कीमें हैं यह सब जो हैं  CSS (Centrally Sponsored Scheme) स्कीमें हैं 
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+	
+	<div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+            प्रक्रिया प्रारंभ होने से पूर्व ध्यान रखने योग्य
+			</div>
+         <div class="card-body">
+          <h5 class="card-title" style="font-size:1.2em;font-weight:600;text-shadow: 2px 2px 4px #000000;">Website URL : http://pfms.nic.in</h5>
+          <p class="card-text tfcss">PFMS Scheme Code - BR137 </p>
+          <p class="card-text tfcss">Scheme Name - Samgra Siksha (Elementary Education) BIHAR</p>
+          <p class="card-text tfcss">SNA BANK - Bank Of Baroda </p>
+          <p class="card-text tfcss">Implementing Agency - SMC </p>
+          <p class="card-text tfcss">Stackeholders - प्रधानाध्यापक, सहायक अध्यापक, एवं SMC अध्यक्ष</p>
+          <p class="card-text tfcss">Payment Mod - PPA (Print Payment Advice) </p>
+          <a href="http://pfms.nic.in" class="btn btn-primary">Go PFMS </a>
+        </div>
+    </div>
+	
+	<div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+                     तीन प्रमुख उत्तरदायित्वकर्त्ता 
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:1.2em;font-weight:600;text-shadow: 2px 2px 4px #000000;">प्रधानाध्यापक</h5>
+		  <ol>
+			<li>PFMS पोर्टल पर एजेंसी एडमिनिस्ट्रेटर / एडमिन , </li>
+			<li> एजेंसी डाटा अप्रूवर, </li>
+			<li>PPA Signatory / हस्ताक्षरी </li>
+		  </ol>
+          
+		  <h5 class="card-title" style="font-size:1.2em;font-weight:600;text-shadow: 2px 2px 4px #000000;">सहायक अध्यापक / SM</h5>
+			<ol>
+			<li>PFMS एजेंसी डाटा ऑपरेटर </li>
+		  </ol>
+		  
+		  <h5 class="card-title" style="font-size:1.2em;font-weight:600;text-shadow: 2px 2px 4px #000000;">SMC अध्यक्ष</h5>
+			<ol>
+			<li>PPA Signatory / हस्ताक्षरी</li>
+		  </ol>
+        </div>
+      </div>
+     
+      <div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+                     प्रधानाध्यापक / इंचार्ज के कार्य 
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:1.2em;font-weight:600;text-shadow: 2px 2px 4px #000000;">प्रधानाध्यापक</h5>
+		  <ol>
+			<li>सर्वप्रथम  प्रधानाध्यापक द्वारा यह सुनिश्चित कर लिया जाए कि उसका विद्यालय पोर्टल पर पंजीकृत  हैं या नहीं  </li>
+			<li>   यदि आपका विद्यालय पंजीकृत  है  तो आप सबंधित बी आर सी से एजेंसी एडमिनिस्ट्रेटर की Login ID और Password प्राप्त कर ले |</li>
+			<li> यदि आपका विद्यालय पंजीकृत नहीं  है  तो आप अपनी  बी आर सी से सम्पर्क स्थापित कर पंजीकरण कराए </li>
+		  </ol>
+          
+        </div>
+      </div>
+	  
+	  <div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+                     यूजर्स के प्रकार
+        </div>
+        <div class="card-body">
+          <P class="card-title tfcss_1">1 . एजेंसी एडमिनिस्ट्रेटर / एडमिन    -    प्रधानाध्यापक / इंचार्ज </P>
+		 <p class="card-text tfcss_1">2. डाटा ऑपरेटर (DO)  -  सहायक अध्यापक या शिक्षामित्र   </p>
+          <p class="card-text tfcss_1">3. डाटा अप्रूवर (DA) -  प्रधानाध्यापक  या इंचार्ज</p>
+        </div>
+      </div>
+
+	<div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+			यूजर्स के कार्य
+        </div>
+        <div class="card-body">
+          <P class="card-title">Agency Admin
+			  <ol> 
+				 <li>  लिमिट चेक करना  </li>
+				 <li>   पेमेंट मोड एक्टिवेट करना </li>
+				 <li>DA एवं DO का पंजीकरण करके उनकी आईडी क्रिएट करना  </li>
+				  </ol>
+			  </P>
+		 <p class="card-text">Data Operator (DO)  -  
+			 <ol> 
+				 <li>  वेन्डर की मैपिंग एवं  पंजीकरण  करना   </li>
+				 <li>   Expenditure बनाना  एवं  सबमिट करना </li>
+				  </ol>
+			 
+			 </p>
+          <p class="card-text">Data Approver (DA) -  
+			 <ol> 
+				 <li> DO द्वारा सबमिट   Expenditure को अप्रूव  करना   </li>
+				 <li>   PPA जेनरेट करना  करना  एवं  SMC अध्यक्ष के  हस्ताक्षर करा कर बैंक में एडवाइस को जमा करना </li>
+				  </ol>
+			  
+			  </p>
+        </div>
+      </div>
+	
+
+     <div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+		          Website URL
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title tfurl">Website URL : http://pfms.nic.in</h5>
+		   <a href="http://pfms.nic.in" class="btn btn-primary">Go PFMS</a>
+        </div>
+      </div>
+	  
+	  <div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">Google Chrome Open
+		</div>
+		  <div class="card-body">
+          <img src="image/google.jpg" class="img-fluid" alt="...">
+        </div>
+      </div>
+	  
+	  
+
+      <div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+          PFMS URL HOME Page Open
+        </div>
+        <div class="card-body">
+          <img src="image/02.PNG" class="img-fluid" alt="...">
+        </div>
+      </div>
+
+      <div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+          Login Page Open
+        </div>
+        <div class="card-body">
+          <img src="image/03.PNG" class="img-fluid" alt="...">
+        </div>
+      </div>
+
+      <div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+          PFMS Login HOME Page Open
+        </div>
+        <div class="card-body">
+          <img src="image/04.PNG" class="img-fluid" width="100%" alt="...">
+        </div>
+      </div>
+	  
+	  <div class="card mt-4"  style="border-top:8px solid green;min-height:22vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-header" style="font-size:1.7em;font-weight:600;text-shadow: 2px 2px 4px #000000;">
+          IIसबसे पहले PFMS में क्या करें ? Admin id का क्या उपयोग है ?
+        </div>
+        <div class="card-body">
+          <img src="image/04.PNG" class="img-fluid" width="100%" alt="...">
+        </div>
+      </div>
+	
+</div>
+	
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid m-0 p-0">
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between px-3" style="background-color: #DAA520">
+      <!-- Left -->
+      <div class="me-5">
+        <span><strong> Get connected with us on social networks:</strong></span>
+      </div>
+      <!-- Left -->
+      <!-- Right -->
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Company name</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: green; height: 4px"
+                />
+            <p>
+              Codebucket Solutions Private Limited is a Private incorporated on 20 September 2017. It is classified as Non-govt company and is registered ...
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: green; height: 4px"
+                />
+            <p>
+              <a href="#!" class="text-white">MDBootstrap</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">MDWordPress</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">BrandFlow</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Bootstrap Angular</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: green; height: 4px"
+                />
+            <p>
+              <a href="#!" class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+               style="width: 60px; background-color: green; height: 4px"
+                />
+            <p><i class="fas fa-home mr-3"></i> Patna, 801505, Bihar</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 79 038 903 16</p>
+            <p><i class="fas fa-print mr-3"></i> + 79 038 903 16</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2023 Copyright:
+      <a class="text-white" href="https://pfms.nic.in/"
+         >PFMS.in</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</div>
+<!-- End of .container -->
+
+
+  </body>
+</html>
